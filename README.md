@@ -14,7 +14,7 @@ A powerful, collaborative online code editor built for modern development teams.
 ColabIDE is an online code editor that allows developers to write, run, and test their code in multiple programming languages, all from the browser. Built with modern technologies and designed for seamless collaboration, it provides a powerful development environment accessible from anywhere.
 
 ## Demo
-<video src="https://sfmrqycwibsrxzmucyzr.supabase.co/storage/v1/object/public/project-images//2025-01-07_01-26-22.mkv" autoplay loop muted>
+<video src="https://sfmrqycwibsrxzmucyzr.supabase.co/storage/v1/object/public/project-images//2025-01-07_01-26-22.mkv" controls autoplay loop muted></video>
 
 ## ✨ Key Features
 
