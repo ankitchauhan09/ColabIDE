@@ -1,0 +1,51 @@
+{
+  "name": "collaborative-editor-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@convergencelabs/monaco-collab-ext": "^0.4.0",
+    "@material-tailwind/react": "^2.1.10",
+    "@monaco-editor/react": "^4.6.0",
+    "@radix-ui/react-label": "^2.1.1",
+    "@radix-ui/react-scroll-area": "^1.2.3",
+    "@radix-ui/react-select": "^2.1.6",
+    "@radix-ui/react-slot": "^1.1.1",
+    "@radix-ui/react-toast": "^1.2.6",
+    "@tabler/icons-react": "^3.29.0",
+    "axios": "^1.7.9",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.18.2",
+    "lenis": "^1.1.20",
+    "lucide-react": "^0.473.0",
+    "motion": "^12.0.6",
+    "next": "15.1.5",
+    "next-themes": "^0.4.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-element-to-jsx-string": "^17.0.0",
+    "react-split": "^2.0.14",
+    "react-yjs": "^2.0.1",
+    "shiki": "^2.1.0",
+    "sonner": "^1.7.4",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
+    "y-monaco": "^0.1.6",
+    "y-webrtc": "^10.3.0",
+    "y-websocket": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
