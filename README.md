@@ -1,120 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ColabIDE - Collaborative Online Code Editor</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            color: #333;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        h1 {
-            color: #2563eb;
-            margin-bottom: 1rem;
-        }
-        h2 {
-            color: #1e40af;
-            margin-top: 2rem;
-        }
-        .badges {
-            display: flex;
-            gap: 0.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 1rem 0;
-        }
-        .badge {
-            background: #e5e7eb;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            color: #4b5563;
-        }
-        .features {
-            background: #f9fafb;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            margin: 1.5rem 0;
-        }
-        .feature-item {
-            margin-bottom: 1rem;
-        }
-        code {
-            background: #e5e7eb;
-            padding: 0.2rem 0.4rem;
-            border-radius: 0.25rem;
-            font-size: 0.875em;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid #e5e7eb;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h1>🚀 ColabIDE</h1>
-        <p>A powerful, collaborative online code editor built for modern development teams</p>
-        <div class="badges">
-            <span class="badge">Next.js</span>
-            <span class="badge">Spring Boot</span>
-            <span class="badge">Monaco Editor</span>
-            <span class="badge">Docker</span>
-            <span class="badge">WebSocket</span>
-            <span class="badge">Yjs</span>
-        </div>
-    </div>
+# 🚀 ColabIDE
 
-    <h2>✨ Features</h2>
-    <div class="features">
-        <div class="feature-item">
-            <strong>🌐 Multi-Language Support</strong>
-            <p>Write and execute code in multiple programming languages including Java, Python, C++, and JavaScript - all from your browser.</p>
-        </div>
-        <div class="feature-item">
-            <strong>👥 Real-time Collaboration</strong>
-            <p>Code together with your team in real-time. See live cursor positions, track changes, and collaborate seamlessly using Yjs synchronization.</p>
-        </div>
-        <div class="feature-item">
-            <strong>🔒 Secure Execution</strong>
-            <p>Code execution happens in isolated Docker containers, ensuring secure and efficient compilation for each language.</p>
-        </div>
-        <div class="feature-item">
-            <strong>⚡ Powerful Editor</strong>
-            <p>Built on Monaco Editor (the same engine that powers VS Code) for a premium coding experience with syntax highlighting and intelligent code completion.</p>
-        </div>
-    </div>
+A powerful, collaborative online code editor built for modern development teams.
 
-    <h2>🛠️ Tech Stack</h2>
-    <ul>
-        <li><strong>Frontend:</strong> Next.js, React, Monaco Editor</li>
-        <li><strong>Backend:</strong> Spring Boot</li>
-        <li><strong>Real-time Collaboration:</strong> Yjs, WebSocket</li>
-        <li><strong>Code Execution:</strong> Docker</li>
-    </ul>
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js)
+![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![Monaco Editor](https://img.shields.io/badge/-Monaco%20Editor-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![WebSocket](https://img.shields.io/badge/-WebSocket-010101?style=flat-square)
+![Yjs](https://img.shields.io/badge/-Yjs-FFDC00?style=flat-square&logoColor=black)
 
-    <h2>🔥 Latest Updates</h2>
-    <ul>
-        <li>Real-time collaborative coding implementation</li>
-        <li>Remote cursor tracking using Monaco Delta Decoration API</li>
-        <li>Instant change synchronization across all connected users</li>
-        <li>Enhanced team collaboration features</li>
-    </ul>
+## About The Project
 
-    <div class="footer">
-        <p>Built with ❤️ for developers by developers</p>
-        <p>Looking forward to your feedback and contributions!</p>
-    </div>
-</body>
-</html>
+ColabIDE is an online code editor that allows developers to write, run, and test their code in multiple programming languages, all from the browser. Built with modern technologies and designed for seamless collaboration, it provides a powerful development environment accessible from anywhere.
+
+## ✨ Key Features
+
+### 🌐 Multi-Language Support
+- Write and execute code in Java, Python, C++, JavaScript, and more
+- Seamless language switching with automatic syntax highlighting
+- Isolated execution environments for each language
+
+### 👥 Real-time Collaboration
+- Code together with your team in real-time
+- Track remote cursors and see live changes
+- Built-in WebSocket communication for instant updates
+- Smooth synchronization powered by Yjs
+
+### 🔒 Secure Execution
+- Isolated Docker containers for code compilation
+- Secure sandboxing for each execution
+- Resource usage monitoring and limits
+
+### ⚡ Powerful Editor Experience
+- Built on Monaco Editor (powers VS Code)
+- Intelligent code completion
+- Syntax highlighting
+- Multiple themes support
+- Integrated terminal
+
+## 🛠️ Tech Stack
+
+### Frontend
+- Next.js for the UI framework
+- React for component architecture
+- Monaco Editor for code editing
+- Yjs for real-time collaboration
+
+### Backend
+- Spring Boot for the server
+- WebSocket for real-time communication
+- Docker for code execution
+- Multi-language compilation support
+
+## 🔥 Latest Updates
+
+### Real-time Collaboration Features
+- Implemented real-time collaborative coding
+- Added remote cursor tracking using Monaco Delta Decoration API
+- Enabled instant change synchronization
+- Enhanced team collaboration capabilities
+- Improved cursor position tracking
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/colabide.git
+
+# Navigate to the project directory
+cd colabide
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## 📦 Prerequisites
+
+- Node.js (v14 or higher)
+- Docker
+- Java 17 or higher
+- Maven
+
+## 💡 Roadmap
+
+- [ ] Add support for more programming languages
+- [ ] Implement user authentication
+- [ ] Add project sharing capabilities
+- [ ] Create custom theme editor
+- [ ] Add integrated debugging tools
+
+## 🤝 Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+Built with ❤️ for developers by developers.
+
+Looking forward to your feedback and contributions! 🎉
