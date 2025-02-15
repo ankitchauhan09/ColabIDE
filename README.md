@@ -63,12 +63,28 @@ ColabIDE is an online code editor that allows developers to write, run, and test
 
 ## 🚀 Getting Started
 
-```bash
-# Clone the repository
-git clone https://github.com/ankitchauhan09/ColabIDE.git
+### Running the Backend
 
-# Navigate to the project directory
-cd colabide
+Navigate to the `CollaborativeEditor` directory:
+
+```bash
+cd CollaborativeEditor
+
+# For Unix/Linux/MacOS
+./mvnw spring-boot:run
+
+# For Windows
+.\mvnw.cmd spring-boot:run
+```
+
+The backend server will start on `http://localhost:8080`
+
+### Running the Frontend
+
+Navigate to the `collaborative-editor-frontend` directory:
+
+```bash
+cd collaborative-editor-frontend
 
 # Install dependencies
 npm install
@@ -77,12 +93,14 @@ npm install
 npm run dev
 ```
 
+The frontend development server will start on `http://localhost:3000`
+
 ## 📦 Prerequisites
 
 - Node.js (v14 or higher)
-- Docker
 - Java 17 or higher
-- Maven
+- Maven (or use the included Maven Wrapper)
+- Docker
 
 ## 💡 Roadmap
 
