@@ -65,7 +65,7 @@ ColabIDE is an online code editor that allows developers to write, run, and test
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/colabide.git
+git clone https://github.com/ankitchauhan09/ColabIDE.git
 
 # Navigate to the project directory
 cd colabide
