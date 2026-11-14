@@ -1,134 +1,127 @@
-# 🚀 ColabIDE
+# ColabIDE
 
-A powerful, collaborative online code editor built for modern development teams.
+A browser-based collaborative code editor for writing and running code, with real-time collaboration and containerized execution.
 
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js)
-![Spring Boot](https://img.shields.io/badge/-Spring%20Boot-6DB33F?style=flat-square&logo=spring&logoColor=white)
-![Monaco Editor](https://img.shields.io/badge/-Monaco%20Editor-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![WebSocket](https://img.shields.io/badge/-WebSocket-010101?style=flat-square)
-![Yjs](https://img.shields.io/badge/-Yjs-FFDC00?style=flat-square&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=spring&logoColor=white)
+![Monaco Editor](https://img.shields.io/badge/Monaco%20Editor-007ACC?logo=visualstudiocode&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?logo=socketdotio&logoColor=white)
+![Yjs](https://img.shields.io/badge/Yjs-FFDC00?logoColor=black)
 
-## About The Project
+## Overview
 
-ColabIDE is an online code editor that allows developers to write, run, and test their code in multiple programming languages, all from the browser. Built with modern technologies and designed for seamless collaboration, it provides a powerful development environment accessible from anywhere.
+ColabIDE is an online code editor intended to let developers write, execute, and collaborate on code from a browser. The repository contains a Spring Boot backend in `CollaborativeEditor/` and a Next.js frontend in `collaborative-editor-frontend/`.
+
+## Features
+
+- **Browser-based editing:** Monaco Editor provides the code-editing experience.
+- **Multi-language execution:** The project README describes support for Java, Python, C++, JavaScript, and other languages.
+- **Real-time collaboration:** WebSocket communication and Yjs are used for shared editing and synchronization.
+- **Cursor awareness:** Remote cursor tracking is implemented using Monaco decorations.
+- **Containerized execution:** Docker is used to isolate code execution environments.
+- **Editor experience:** Syntax highlighting, themes, and an integrated terminal are part of the documented feature set.
+
+## Architecture
+
+At a high level, the repository is split into two applications:
+
+```mermaid
+flowchart LR
+    U[Developer browser] --> FE[Next.js frontend]
+    FE --> ME[Monaco Editor]
+    FE <--> WS[WebSocket collaboration]
+    WS <--> BE[Spring Boot backend]
+    BE --> DX[Docker execution environments]
+    FE <--> Y[Yjs document synchronization]
+```
+
+The diagram is a conceptual overview based on the components documented in this repository; consult the source code for implementation details.
+
+## Technology Stack
+
+| Layer | Technologies |
+|---|---|
+| Frontend | Next.js, React, Monaco Editor |
+| Collaboration | Yjs, WebSocket |
+| Backend | Java, Spring Boot |
+| Code execution | Docker |
+| Supported languages | Java, Python, C++, JavaScript (as documented) |
 
 ## Demo
-<video src="https://sfmrqycwibsrxzmucyzr.supabase.co/storage/v1/object/public/project-images/output.mp4" controls autoplay loop muted></video>
 
-## ✨ Key Features
+A project demo video is available here:
 
-### 🌐 Multi-Language Support
-- Write and execute code in Java, Python, C++, JavaScript, and more
-- Seamless language switching with automatic syntax highlighting
-- Isolated execution environments for each language
+[Watch the ColabIDE demo](https://sfmrqycwibsrxzmucyzr.supabase.co/storage/v1/object/public/project-images/output.mp4)
 
-### 👥 Real-time Collaboration
-- Code together with your team in real-time
-- Track remote cursors and see live changes
-- Built-in WebSocket communication for instant updates
-- Smooth synchronization powered by Yjs
+## Getting Started
 
-### 🔒 Secure Execution
-- Isolated Docker containers for code compilation
-- Secure sandboxing for each execution
-- Resource usage monitoring and limits
+### Prerequisites
 
-### ⚡ Powerful Editor Experience
-- Built on Monaco Editor (powers VS Code)
-- Intelligent code completion
-- Syntax highlighting
-- Multiple themes support
-- Integrated terminal
+- Java 17 or later
+- Node.js 14 or later
+- Docker
+- npm
 
-## 🛠️ Tech Stack
+### 1. Start the backend
 
-### Frontend
-- Next.js for the UI framework
-- React for component architecture
-- Monaco Editor for code editing
-- Yjs for real-time collaboration
-
-### Backend
-- Spring Boot for the server
-- WebSocket for real-time communication
-- Docker for code execution
-- Multi-language compilation support
-
-## 🔥 Latest Updates
-
-### Real-time Collaboration Features
-- Implemented real-time collaborative coding
-- Added remote cursor tracking using Monaco Delta Decoration API
-- Enabled instant change synchronization
-- Enhanced team collaboration capabilities
-- Improved cursor position tracking
-
-## 🚀 Getting Started
-
-### Running the Backend
-
-Navigate to the `CollaborativeEditor` directory:
+From the repository root:
 
 ```bash
 cd CollaborativeEditor
 
-# For Unix/Linux/MacOS
+# macOS / Linux
 ./mvnw spring-boot:run
 
-# For Windows
-.\mvnw.cmd spring-boot:run
+# Windows
+.\\mvnw.cmd spring-boot:run
 ```
 
-The backend server will start on `http://localhost:8080`
+The existing project instructions indicate that the backend listens on `http://localhost:8080`.
 
-### Running the Frontend
+### 2. Start the frontend
 
-Navigate to the `collaborative-editor-frontend` directory:
+Open a second terminal:
 
 ```bash
 cd collaborative-editor-frontend
-
-# Install dependencies
 npm install
-
-# Start the development server
 npm run dev
 ```
 
-The frontend development server will start on `http://localhost:3000`
+The existing project instructions indicate that the frontend is available at `http://localhost:3000`.
 
-## 📦 Prerequisites
+### Configuration
 
-- Node.js (v14 or higher)
-- Java 17 or higher
-- Maven (or use the included Maven Wrapper)
-- Docker
+Review the backend and frontend configuration files before running the application. Configure any required service URLs, environment variables, and Docker settings for your local environment. Do not commit credentials or secret values.
 
-## 💡 Roadmap
+## Repository Layout
 
-- [ ] Add support for more programming languages
-- [ ] Implement user authentication
-- [ ] Add project sharing capabilities
-- [ ] Create custom theme editor
-- [ ] Add integrated debugging tools
+```text
+ColabIDE/
+├── CollaborativeEditor/          # Spring Boot backend
+├── collaborative-editor-frontend/ # Next.js frontend
+└── README.md
+```
 
-## 🤝 Contributing
+## Current Scope and Future Work
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+The original project notes list the following as planned enhancements. Their current implementation status should be verified against the source before treating them as completed:
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- [ ] Expand language support
+- [ ] Authentication and authorization
+- [ ] Project sharing
+- [ ] Custom theme editor
+- [ ] Integrated debugging tools
 
-## 📝 License
+## Contributing
 
-Distributed under the MIT License. See `LICENSE` for more information.
+1. Fork the repository.
+2. Create a feature branch.
+3. Make focused changes and add or update tests.
+4. Run the relevant backend and frontend checks.
+5. Open a pull request describing the change.
 
 ---
 
-Built with ❤️ for developers by developers.
-
-Looking forward to your feedback and contributions! 🎉
+Built as a collaborative development environment for the browser.
